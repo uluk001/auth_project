@@ -158,6 +158,13 @@ MEDIA_ROOT = str(BASE_DIR.joinpath('media'))
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Email settings
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'smtp.mail.ru'
+EMAIL_HOST_USER = 'mail_for_projects_neobis@mail.ru'
+EMAIL_HOST_PASSWORD = 'VuQngxzk2tXAwqF4muNL'
+EMAIL_PORT = 465
+EMAIL_USE_SSL = True
 
+
+DEFAULT_FROM_EMAIL = 'mail_for_projects_neobis@mail.ru'
